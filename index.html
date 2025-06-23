@@ -1,34 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Mon Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Ibtasam Ul Hassan Shah</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
-    h1 { color: #007ACC; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #00509e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #003366;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #00509e;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00509e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur mon portfolio</h1>
-  <p>Je m'appelle [Ton nom], étudiant en BUT3 Sciences des données.</p>
+  <header>
+    <h1>Portfolio – Ibtasam Ul Hassan Shah</h1>
+    <p>Étudiant en BUT Sciences des données – Spécialisé en informatique décisionnelle</p>
+  </header>
 
-  <h2>Compétences en cours</h2>
-  <ul>
-    <li>Python, R, SQL</li>
-    <li>Statistiques, Machine Learning</li>
-    <li>Power BI, Excel, visualisation</li>
-  </ul>
+  <nav>
+    <a href="#apropos">À propos de moi</a>
+    <a href="#competences">Mes compétences</a>
+    <a href="#projets">Mes projets</a>
+    <a href="#cv">Mon CV</a>
+  </nav>
 
-  <h2>Compétences en entreprise</h2>
-  <p>Stage chez Thales – Data Analyst Obsolescence (2025)</p>
-  <ul>
-    <li>Nettoyage de données Excel</li>
-    <li>Tableau de bord Power BI</li>
-    <li>Analyse des stocks, flux MCO/PSI</li>
-  </ul>
+  <section id="apropos">
+    <h2>À propos de moi</h2>
+    <p>Bienvenue sur mon site ! Découvrez ici mon portfolio : mon parcours pro, mes compétences, mes expériences...</p>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Email : ton.email@exemple.com</p>
-  <p>CV : <a href="CV.pdf" target="_blank">Télécharger</a></p>
+  <section id="competences">
+    <h2>Mes compétences</h2>
+    <ul>
+      <li><strong>Statistiques & Modélisation :</strong> ACP, AFC, régressions, séries temporelles</li>
+      <li><strong>Outils & Langages :</strong> Python (Pandas, Numpy), R, SQL, C#, HTML/CSS, VBA</li>
+      <li><strong>Visualisation :</strong> Power BI, Excel, R Shiny, Tableau</li>
+      <li><strong>Bases de données :</strong> Access, SQL Developer, ETL Talend, SAP</li>
+      <li><strong>Soft skills :</strong> Gestion de projet, Reporting, Communication, Respect RGPD</li>
+      <li><strong>Langues :</strong> Anglais (TOEIC 980), Espagnol B2, Hindi, Ourdou</li>
+    </ul>
+  </section>
+
+  <section id="projets">
+    <h2>Mes projets</h2>
+    <ul>
+      <li><strong>2024 – Power BI :</strong> Tableau de bord sur les accidents routiers selon la météo</li>
+      <li><strong>2024 – R :</strong> Analyse statistique sur la performance des athlètes aux JO 2024</li>
+      <li><strong>2023 – Projet Ingénieur :</strong> Construction d’un aéromouleur électromagnétique</li>
+      <li><strong>2022 – Programmation C# :</strong> Création d’un jeu de mots-mêlés avec interface et système de score</li>
+    </ul>
+  </section>
+
+  <section id="cv">
+    <h2>Mon CV</h2>
+    <p>Vous pouvez consulter mon CV complet en cliquant ci-dessous :</p>
+    <a class="btn" href="CV_2025.pdf" target="_blank">Télécharger mon CV</a>
+  </section>
 </body>
 </html>
