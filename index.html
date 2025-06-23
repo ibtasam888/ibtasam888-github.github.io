@@ -5,60 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Ibtasam Ul Hassan Shah</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f9;
-      color: #333;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #00509e;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      padding: 15px 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background-color: #003366;
-    }
-    section {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #00509e;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #00509e;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    ul {
-      padding-left: 20px;
-    }
+    body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#f4f6f9; color:#333 }
+    header { background:#003366; color:#fff; padding:20px; display:flex; align-items:center; justify-content:center; gap:15px }
+    header img { height:60px }
+    nav { background:#00509e; display:flex; justify-content:center; flex-wrap:wrap }
+    nav a{ color:#fff; padding:15px 20px; text-decoration:none; font-weight:bold }
+    nav a:hover{ background:#003366 }
+    section{ padding:30px; max-width:900px; margin:auto }
+    h2{ color:#00509e; display:flex; align-items:center; gap:10px }
+    .btn{ margin-top:15px; padding:10px 20px; background:#00509e; color:#fff; text-decoration:none; border-radius:5px }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:15px; align-items:center }
+    .grid img{ max-width:80px; margin:auto }
+    .exp, .proj{ display:flex; align-items:center; gap:15px; margin-bottom:20px }
+    .exp img, .proj img{ height:50px }
   </style>
 </head>
 <body>
   <header>
-    <h1>Portfolio – Ibtasam Ul Hassan Shah</h1>
-    <p>Étudiant en BUT Sciences des données – Spécialisé en informatique décisionnelle</p>
+    <img src="iut_vannes_logo.png" alt="IUT de Vannes">
+    <div>
+      <h1>Portfolio – Ibtasam Ul Hassan Shah</h1>
+      <p>Étudiant en BUT Sciences des données – Spécialisé en informatique décisionnelle</p>
+    </div>
   </header>
 
   <nav>
@@ -72,55 +40,65 @@
 
   <section id="apropos">
     <h2>À propos de moi</h2>
-    <p>Bienvenue sur mon site ! Découvrez ici mon portfolio : mon parcours pro, mes compétences, mes expériences...</p>
+    <p>Bienvenue sur mon site ! Découvrez ici mon portfolio : mon parcours professionnel, mes compétences, mes expériences...</p>
   </section>
 
   <section id="competences">
     <h2>Mes compétences</h2>
-    <ul>
-      <li><strong>Statistiques & Modélisation :</strong> ACP, AFC, régressions, séries temporelles</li>
-      <li><strong>Outils & Langages :</strong> Python (Pandas, Numpy), R, SQL, C#, HTML/CSS, VBA</li>
-      <li><strong>Visualisation :</strong> Power BI, Excel, R Shiny, Tableau</li>
-      <li><strong>Bases de données :</strong> Access, SQL Developer, ETL Talend, SAP</li>
-      <li><strong>Soft skills :</strong> Gestion de projet, Reporting, Communication, Respect RGPD</li>
-      <li><strong>Langues :</strong> Anglais (TOEIC 980), Espagnol B2, Hindi, Ourdou</li>
-    </ul>
+    <div class="grid">
+      <div><img src="python_logo.png" alt="Python"><div>Python</div></div>
+      <div><img src="powerbi_logo.png" alt="Power BI"><div>Power BI</div></div>
+      <div><img src="sql_logo.png" alt="SQL"><div>SQL</div></div>
+      <!-- Ajoute d'autres compétences avec logos -->
+    </div>
   </section>
 
   <section id="projets">
     <h2>Mes projets</h2>
-    <ul>
-      <li><strong>2024 – Power BI :</strong> Tableau de bord sur les accidents routiers selon la météo</li>
-      <li><strong>2024 – R :</strong> Analyse statistique sur la performance des athlètes aux JO 2024</li>
-      <li><strong>2023 – Projet Ingénieur :</strong> Construction d’un aéromouleur électromagnétique</li>
-      <li><strong>2022 – Programmation C# :</strong> Création d’un jeu de mots-mêlés avec interface et système de score</li>
-    </ul>
+    <div class="proj">
+      <img src="accident_logo.png" alt="Accidents routiers">
+      <div><strong>2024 – Power BI :</strong> Tableau de bord sur les accidents routiers selon la météo</div>
+    </div>
+    <div class="proj">
+      <img src="jo2024_logo.png" alt="JO 2024">
+      <div><strong>2024 – R :</strong> Analyse statistique sur la performance des athlètes aux JO 2024</div>
+    </div>
+    <div class="proj">
+      <img src="aeromouleur.png" alt="Aéromouleur">
+      <div><strong>2023 – Projet Ingénieur :</strong> Construction d’un aéromouleur électromagnétique</div>
+    </div>
+    <div class="proj">
+      <img src="mots_meles.png" alt="Mots mêlés">
+      <div><strong>2022 – Programmation C# :</strong> Jeu de mots-mêlés avec interface et système de score</div>
+    </div>
   </section>
 
   <section id="experiences">
     <h2>Mes expériences</h2>
-    <ul>
-      <li><strong>2025 – THALES LAS OME FRANCE (Élancourt)</strong><br/>
-        Stage Data Analyst Obsolescence : reporting Power BI, nettoyage de données, analyse des stocks, intégration SAP & BOM.
-      </li>
-      <li><strong>2024 – L’AGEFI (Paris 16ème)</strong><br/>
-        Gestionnaire base de données – pôle Data & IA.
-      </li>
-      <li><strong>2023 – AXA France IARD (Nanterre)</strong><br/>
-        Technicien indexation : traitement des flux numériques, affectation des données.
-      </li>
-      <li><strong>2021 & 2022 – PC'TEL (Dreux)</strong><br/>
-        Assistant technicien & ventes : réparation hardware/software, service client.
-      </li>
-    </ul>
+    <div class="exp">
+      <img src="thales_logo.png" alt="Thales">
+      <div><strong>2025 – THALES LAS OME FRANCE (Élancourt)</strong><br/>Stage Data Analyst Obsolescence : reporting Power BI, nettoyage de données, analyse des stocks, intégration SAP & BOM.</div>
+    </div>
+    <div class="exp">
+      <img src="agefi_logo.png" alt="L’AGEFI">
+      <div><strong>2024 – L’AGEFI (Paris)</strong><br/>Gestionnaire base de données – pôle Data & IA.</div>
+    </div>
+    <div class="exp">
+      <img src="axa_logo.png" alt="AXA">
+      <div><strong>2023 – AXA France IARD (Nanterre)</strong><br/>Technicien indexation : traitement des flux numériques, affectation des données.</div>
+    </div>
+    <div class="exp">
+      <img src="pctel_logo.png" alt="PC'TEL">
+      <div><strong>2021–2022 – PC'TEL (Dreux)</strong><br/>Assistant technicien & ventes : réparation hardware/software, service client.</div>
+    </div>
   </section>
 
   <section id="formations">
     <h2>Mes formations</h2>
     <ul>
-      <li><strong>2024–2026 :</strong> BUT Sciences des Données (ex-STID), IUT de Vannes</li>
-      <li><strong>2022–2024 :</strong> Classe prépa intégrée – École d’ingénieurs ESILV, Paris La Défense</li>
-      <li><strong>2022 :</strong> Baccalauréat Mathématiques & Physique-Chimie – Mention Très Bien, Lycée Édouard Branly, Dreux</li>
+      <li><strong>2024–2026:</strong> BUT Sciences des Données (ex‑STID), IUT de Vannes</li>
+      <li><strong>2022–2024:</strong> Classe prépa intégrée – ESILV, Paris La Défense</li>
+      <li><strong>2022:</strong> Bac Maths & Physique-Chimie – Mention TB, Lycée Édouard Branly, Dreux</li>
     </ul>
   </section>
 
