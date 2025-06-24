@@ -16,7 +16,7 @@
     .btn{ margin-top:15px; padding:10px 20px; background:#00509e; color:#fff; text-decoration:none; border-radius:5px }
     .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:15px; align-items:center }
     .grid img{ max-width:80px; margin:auto }
-    .exp, .proj{ display:flex; align-items:center; gap:15px; margin-bottom:20px }
+    .exp, .proj{ display:flex; align-items:flex-start; gap:15px; margin-bottom:20px }
     .exp img, .proj img{ height:50px }
   </style>
 </head>
@@ -45,11 +45,29 @@
 
   <section id="competences">
     <h2>Mes compétences</h2>
+    <p>Mes différentes expériences professionnelles ainsi que les projets réalisés tout au long de ma formation m'ont permis d'acquérir de nombreuses compétences, tant professionnelles que techniques.</p>
+    
+    <h3>Compétences principales</h3>
+    <ul>
+      <li>Analyse de données dans leur contexte métier pour produire des analyses pertinentes.</li>
+      <li>Mise en place de processus d'Extraction, Transformation et Chargement (ETL).</li>
+      <li>Création de visualisations claires et utiles pour la prise de décision.</li>
+      <li>Analyse prédictive et statistiques avancées : Machine Learning, fine-tuning, retrieval pour la prise de décision.</li>
+      <li>Gestion complète de projets décisionnels : de la définition du besoin à l'accompagnement des utilisateurs.</li>
+      <li>Rédaction de documentation technique et réalisation de tests fonctionnels.</li>
+    </ul>
+
+    <h3>Logiciels maîtrisés</h3>
     <div class="grid">
       <div><img src="python.png" alt="Python"><div>Python</div></div>
       <div><img src="powerbi.png" alt="Power BI"><div>Power BI</div></div>
       <div><img src="sql.jpg" alt="SQL"><div>SQL</div></div>
-      <!-- Ajoute d'autres compétences avec logos -->
+      <div><img src="r_logo.png" alt="R"><div>R</div></div>
+      <div><img src="excel.png" alt="Excel"><div>Excel</div></div>
+      <div><img src="sap.png" alt="SAP"><div>SAP</div></div>
+      <div><img src="vscode.png" alt="VS Code"><div>VS Code</div></div>
+      <div><img src="html.png" alt="HTML"><div>HTML/CSS</div></div>
+      <div><img src="git.png" alt="GitHub"><div>Git/GitHub</div></div>
     </div>
   </section>
 
@@ -57,19 +75,35 @@
     <h2>Mes projets</h2>
     <div class="proj">
       <img src="accident-voiture.png" alt="Accidents routiers">
-      <div><strong>2024 – Power BI :</strong> Tableau de bord sur les accidents routiers selon la météo</div>
+      <div>
+        <strong>2024 – Power BI :</strong> Tableau de bord sur les accidents routiers selon la météo.<br/>
+        <em>Outils :</em> Power BI, Excel<br/>
+        <em>Compétences :</em> Data cleaning, jointures, modélisation de données, visualisation, storytelling.
+      </div>
     </div>
     <div class="proj">
       <img src="jo.png" alt="JO 2024">
-      <div><strong>2024 – R :</strong> Analyse statistique sur la performance des athlètes aux JO 2024</div>
+      <div>
+        <strong>2024 – R :</strong> Analyse statistique sur la performance des athlètes aux JO 2024.<br/>
+        <em>Outils :</em> R, ggplot2<br/>
+        <em>Compétences :</em> Analyse exploratoire, régression, clustering, data visualization.
+      </div>
     </div>
     <div class="proj">
       <img src="aerorouleur.jpg" alt="Aérorouleur">
-      <div><strong>2023 – Projet Ingénieur :</strong> Construction d’un aéromouleur électromagnétique</div>
+      <div>
+        <strong>2023 – Projet Ingénieur :</strong> Construction d’un aéromouleur électromagnétique.<br/>
+        <em>Outils :</em> SolidWorks, Arduino<br/>
+        <em>Compétences :</em> Travail d’équipe, prototypage, gestion de projet, rédaction de rapport technique.
+      </div>
     </div>
     <div class="proj">
       <img src="mots_meles.png" alt="Mots mêlés">
-      <div><strong>2022 – Programmation C# :</strong> Jeu de mots-mêlés avec interface et système de score</div>
+      <div>
+        <strong>2022 – Programmation C# :</strong> Jeu de mots-mêlés avec interface et système de score.<br/>
+        <em>Outils :</em> Visual Studio, C# WinForms<br/>
+        <em>Compétences :</em> Algorithmique, interface utilisateur, gestion d'événements, structuration de code.
+      </div>
     </div>
   </section>
 
@@ -77,28 +111,57 @@
     <h2>Mes expériences</h2>
     <div class="exp">
       <img src="thales.png" alt="Thales">
-      <div><strong>2025 – THALES LAS OME FRANCE (Élancourt)</strong><br/>Stage Data Analyst Obsolescence : reporting Power BI, nettoyage de données, analyse des stocks, intégration SAP & BOM.</div>
+      <div>
+        <strong>2025 – THALES LAS OME FRANCE (Élancourt)</strong><br/>
+        <em>Stage Data Analyst Obsolescence</em><br/>
+        Missions : Nettoyage et croisement de fichiers Excel, création d’un tableau de bord Power BI, analyse de la criticité des stocks obsolètes, analyse BOM & SAP, prévisions MCO et PSI.<br/>
+        Compétences : Power BI, Excel avancé, modélisation, automatisation des rapports, compréhension du cycle de vie des composants, gestion de projet décisionnel.
+      </div>
     </div>
     <div class="exp">
       <img src="agefi.jpg" alt="L’AGEFI">
-      <div><strong>2024 – L’AGEFI (Paris)</strong><br/>Gestionnaire base de données – pôle Data & IA.</div>
+      <div>
+        <strong>2024 – L’AGEFI (Paris)</strong><br/>
+        <em>Gestionnaire base de données – Pôle Data & IA</em><br/>
+        Missions : Mise à jour et maintenance de bases de données financières, structuration de flux de données, documentation des processus, utilisation d’outils SQL et Excel.<br/>
+        Compétences : SQL, Excel, rigueur, travail en équipe, qualité des données.
+      </div>
     </div>
     <div class="exp">
       <img src="axa.png" alt="AXA">
-      <div><strong>2023 – AXA France IARD (Nanterre)</strong><br/>Technicien indexation : traitement des flux numériques, affectation des données.</div>
+      <div>
+        <strong>2023 – AXA France IARD (Nanterre)</strong><br/>
+        <em>Technicien indexation</em><br/>
+        Missions : Traitement des flux documentaires numériques, affectation des données aux bons dossiers, respect des délais.<br/>
+        Compétences : Organisation, précision, autonomie, gestion des priorités.
+      </div>
     </div>
     <div class="exp">
       <img src="pctel.png" alt="PC'TEL">
-      <div><strong>2021–2022 – PC'TEL (Dreux)</strong><br/>Assistant technicien & ventes : réparation hardware/software, service client.</div>
+      <div>
+        <strong>2021–2022 – PC'TEL (Dreux)</strong><br/>
+        <em>Assistant technicien & ventes</em><br/>
+        Missions : Réparation hardware/software, service client, assistance à la vente.<br/>
+        Compétences : Dépannage informatique, sens du relationnel, écoute, pédagogie.
+      </div>
     </div>
   </section>
 
   <section id="formations">
     <h2>Mes formations</h2>
     <ul>
-      <li><strong>2024–2026:</strong> BUT Sciences des Données (ex‑STID), IUT de Vannes</li>
-      <li><strong>2022–2024:</strong> Classe préparatoire intégrée – ESILV, Paris La Défense</li>
-      <li><strong>2022:</strong> Baccalauréat spécialités Maths & Physique-Chimie – Mention TB, Lycée Édouard Branly, Dreux</li>
+      <li>
+        <strong>2024–2026 :</strong> BUT Sciences des Données (ex‑STID), IUT de Vannes<br/>
+        Principales matières : Statistiques avancées, Analyse de données, Data Visualisation, Informatique décisionnelle, Python, SQL, R, Gestion de projet, Communication professionnelle.
+      </li>
+      <li>
+        <strong>2022–2024 :</strong> Classe préparatoire intégrée – ESILV, Paris La Défense<br/>
+        Principales matières : Mathématiques approfondies, Physique, Algorithmique, Informatique (Python, C), Gestion de projet, Innovation, Communication.
+      </li>
+      <li>
+        <strong>2022 :</strong> Baccalauréat spécialités Maths & Physique-Chimie – Mention Très Bien, Lycée Édouard Branly, Dreux<br/>
+        Approfondissement scientifique, méthodologie rigoureuse, projet expérimental interdisciplinaire.
+      </li>
     </ul>
   </section>
 
